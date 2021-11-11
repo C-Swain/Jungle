@@ -1,4 +1,6 @@
 class AboutController < ApplicationController
-  def controller
+  def show
+  end
+  def index
   end
 end
