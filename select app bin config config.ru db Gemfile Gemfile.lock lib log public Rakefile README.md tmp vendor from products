@@ -1,0 +1,7 @@
+ id | first_name | last_name |      email       |                       password_digest                        |         created_at         |         updated_at         
+----+------------+-----------+------------------+--------------------------------------------------------------+----------------------------+----------------------------
+  1 | lucky4     | very      | the90@gmail.com  | $2a$10$R85UxiyTYPHqFXde/h5cCOIyB3ulz0ydipr.wySb4QOmkt.jlBdnG | 2021-11-11 23:06:54.884877 | 2021-11-11 23:06:54.884877
+  2 | Buster     | Catman    | Buster@gmail.com | $2a$10$DMOJO76xtC58mZtqvWfQQuzuWkiAo23SB119mUs4ftCoexlVH7Epq | 2021-11-12 20:17:43.185946 | 2021-11-12 20:17:43.185946
+  3 | Buttons    | La Chat   | Butons@gmail.com | $2a$10$tOTHtrNjb02BSh.fj9I8LeIRhKIO7e70ycWnsFXs6EmfweEYt4S.C | 2021-11-13 19:00:16.966947 | 2021-11-13 19:00:16.966947
+(3 rows)
+
