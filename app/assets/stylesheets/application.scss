@@ -16,6 +16,7 @@ form.button_to {
   display: inline;
 }
 
-#about-image {
-  max-height: 90vh;
+.about-image {
+  min-width: 90vh;
+  max-height: 70vh;
 }
