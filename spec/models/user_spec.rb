@@ -1,7 +1,23 @@
 require 'rails_helper'
 
 RSpec.describe User, type: :model do
+
+subject do
+  described_class.new(
+                      :first_name => 'Nandor',
+                      :last_name => 'Relentless',
+                      :email => 'Nandy@gmail.com',
+                      :password => 'pillage',
+                      :password_confrimation => 'pillage',
+                      :password_digest => '222'
+
+  )
+end
+
   describe 'Validations' do
+    
+
+
  it "Should confirm the password and password confirmation field match"
   end
 
