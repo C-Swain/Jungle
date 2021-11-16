@@ -30,6 +30,24 @@ end
     subject.last_name = nil 
     subject.valid?
     expect(subject.errors).not_to be_empty
+  end
+  it 'should not save when email field is empty' do
+    subject.email = nil 
+    subject.valid?
+    expect(subject.errors).not_to be_empty
+  end 
+  it 'should not save when password field is empty' do
+    subject.password = nil 
+    subject.valid?
+    expect(subject.errors).not_to be_empty
+  end
+  it 'should not save when password_confirmation field is empty' do
+    subject.password_confirmation = nil 
+    subject.valid?
+    expect(subject.errors).not_to be_empty
+  end
+  
+  
 end
 end
 end
