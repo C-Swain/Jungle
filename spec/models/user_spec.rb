@@ -56,7 +56,7 @@ end
     expect(subject.errors).not_to be_empty
   end
 
-  it 'shoule not allow a user to register with an email already in the system' do
+  it 'should not allow a user to register with an email already in the system' do
     User.create(                      
               :first_name => 'Nandy',
               :last_name => 'Relentless',
@@ -67,6 +67,24 @@ end
     )   
   subject.valid?
   expect(subject.errors).not_to be_empty  
+
+  end
+  it 'should fail if the password is less than 4 chars ' do
+  subject.password = 'bad'
+  subject.password_confirmation = 'bad'
+  subject.valid?
+  expect(subject.errors).not_to be_empty
+end
+
+  describe '.authenticate_with_credentials' do
+    it ' should return the user if authentication passes'do 
+    user = SessionsController.authenticate_with_credentials('Nandy@gmail.com', 'pillage')
+    expect(subject).eql? user
+  end 
+    it ' should not return the user if authentication fails'do 
+    user = SessionsController.authenticate_with_credentials('Nandy@gmail.com', 'village')
+    expect(subject).eql? nil
+  end
 
 end
 end
