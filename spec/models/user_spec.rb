@@ -8,30 +8,19 @@ subject do
                       :last_name => 'Relentless',
                       :email => 'Nandy@gmail.com',
                       :password => 'pillage',
-                      :password_confrimation => 'pillage',
+                      :password_confmation => 'pillage',
                       :password_digest => '222'
 
   )
 end
 
   describe 'Validations' do
-    
-
-
- it "Should confirm the password and password confirmation field match"
-  end
-
- it "Should check to make sure the email is original/ doesn't already exist"
-
-end
- 
- 
- it "The email is not case sensitive"
-end
-
-
-
-  describe '.authenticate_with_credentials' do
-    # examples for this class method here
+  it 'should save when all fields are set'   do
+    subject.valid? 
+    expect(subject.errors).to be_empty
   end
 end
+end
+
+
+
