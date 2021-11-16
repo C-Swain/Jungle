@@ -10,7 +10,6 @@ subject do
                       :password => 'pillage',
                       :password_confirmation => 'pillage',
                       :password_digest => '222'
-
   )
 end
 
@@ -74,17 +73,23 @@ end
   subject.password_confirmation = 'bad'
   subject.valid?
   expect(subject.errors).not_to be_empty
-end
+  end
 
   describe '.authenticate_with_credentials' do
     it ' should return the user if authentication passes'do 
     user = SessionsController.authenticate_with_credentials('Nandy@gmail.com', 'pillage')
     expect(subject).eql? user
-  end 
+    end 
+
+    it ' should return the user if authentication passes even if there are extra spaces before user name'do 
+    user = SessionsController.authenticate_with_credentials(' Nandy@gmail.com', 'pillage')
+    expect(subject).eql? user
+    end 
+
     it ' should not return the user if authentication fails'do 
     user = SessionsController.authenticate_with_credentials('Nandy@gmail.com', 'village')
     expect(subject).eql? nil
-  end
+    end
 
 end
 end
