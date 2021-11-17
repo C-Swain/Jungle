@@ -9,11 +9,12 @@ Here you see our Jungle Home Screen!
 This is the order record created after the strip is successful.
 ![order](https://github.com/C-Swain/Jungle/blob/master/screenshots/Order.png?raw=true)
 
-When a product is out of stock it shows as sold out! 
+  When a product is out of stock it shows as sold out! 
+  
 ![sold out](https://user-images.githubusercontent.com/88508941/142292416-b80c586e-d864-430e-90a2-8f3fce2a43d0.png)
 
 About Us
-![about]https://github.com/C-Swain/Jungle/blob/master/screenshots/about.png?raw=true
+![about](https://github.com/C-Swain/Jungle/blob/master/screenshots/about.png?raw=true)
 
 
 ## Additional Steps for Apple M1 Machines
