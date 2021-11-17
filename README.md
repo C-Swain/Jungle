@@ -1,6 +1,13 @@
 # Jungle
 
-A mini e-commerce application built with Rails 4.2 for purposes of teaching Rails by example.
+A mini e-commerce application built with Rails 4.2. This version was completed as part of the LightHouse Labs Web Development BootCamp. It was built from a template made for purposes of teaching Rails by example.
+
+## Inside the Jungle
+![home screen]
+![order]
+![sold out]
+
+
 
 ## Additional Steps for Apple M1 Machines
 
@@ -31,3 +38,7 @@ More information in their docs: <https://stripe.com/docs/testing#cards>
 * Rails 4.2 [Rails Guide](http://guides.rubyonrails.org/v4.2/)
 * PostgreSQL 9.x
 * Stripe
+
+## Testing 
+* RSpec
+* Poltergeist/Capybara
