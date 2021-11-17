@@ -3,9 +3,10 @@
 A mini e-commerce application built with Rails 4.2. This version was completed as part of the LightHouse Labs Web Development BootCamp. It was built from a template made for purposes of teaching Rails by example.
 
 ## Inside the Jungle
-![home screen]
-![order]
-![sold out]
+![home screen](https://github.com/C-Swain/Jungle/blob/master/screenshots/home.png?raw=true)
+![order](https://github.com/C-Swain/Jungle/blob/master/screenshots/Order.png?raw=true)
+![sold out](https://user-images.githubusercontent.com/88508941/142292416-b80c586e-d864-430e-90a2-8f3fce2a43d0.png)
+
 
 
 
